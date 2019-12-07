@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html amp lang="vi">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="noindex,nofollow">
+        <title>
+            Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty
+        </title>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <link type="image/x-icon" href="https://sakurabeauty.vn/favicon.ico" rel="icon" />
+        <link href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/carousel.js"></script>
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/sticky.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <div class="container">
+                    <a href="tel:19007218" class="icon icon_phone">Hotline: <span >1900 7218</span></a>
+                    <div class="contact_info">
+                        <a href="https://sakurabeauty.vn/he-thong-phan-phoi-sakura" class="htmh" title="Tìm cửa hàng">Tìm Cửa Hàng</a>
+                        <div class="lang">
+                            <span class="vn">VN</span>
+                            <div class="lang_sub"> <a href="http://www.sakurabeauty.com/" class="us">US</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="boxSearch" >
+                    <input type="text" autocomplete="off" name="q" value="" placeholder="Tìm kiếm ..." class="txtSearch" id="search_top">
+                    <div class="iconsearchV"></div>
+                </div>
+                <h1> <strong>
+                    Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty      </strong><a title="Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty" href="https://sakurabeauty.vn/"> <img src="https://sakurabeauty.vn/templates4/front/images/logo.png" alt="Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty" title="Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty" ></a> 
+                </h1>
+                <div class="hintro">
+                    <div class="hi">
+                        <div class="hi_intro">
+                            Chào buổi tối        
+                        </div>
+                        <div class="hi_user"> <a href="#" onclick="dang_nhap()" >Đăng nhập</a> - <a href="#" onclick="dang_ky()">Đăng ký</a> </div>
+                    </div>
+                    <div class="cart_love"> <a href="https://sakurabeauty.vn/yeu-thich.html" class="love"></a> <a href="https://sakurabeauty.vn/gio-hang.html" class="cart"></a> </div>
+                </div>
+                <div class="top_area">
+                    <nav>
+                        <div class="menu"><a class="titlea last" href="https://sakurabeauty.vn/"> TRANG CHỦ </a></div>
+                        <div class="sub menu">
+                            <a class="titlea" href="https://sakurabeauty.vn/ve-sakura"> VỀ SAKURA </a>
+                            <div class="sub_hi sub_Content vskr" style="display: none;">
+                                <a href="https://sakurabeauty.vn/ve-sakura" title="Về Sakura" class="img_menu" ><img src="https://sakurabeauty.vn/data/banner/c5e9882880dbad55efb5ddc66570d3b1.jpg"  alt="Về Sakura" width="250" ></a>
+                                <div class="right_menu"> <a href="https://sakurabeauty.vn/cau-chuyen-thuong-hieu"> Câu chuyện thương hiệu </a> <a href="https://sakurabeauty.vn/video">Video</a> </div>
+                            </div>
+                        </div>
+                        <div class="sub menu">
+                            <a class="titlea" href="https://sakurabeauty.vn/my-pham-sakura"> SẢN PHẨM </a>
+                            <div class="sub_hi sub_Content san_pham" style="display: none;">
+                                <a id="linkCategoryPd" href="https://sakurabeauty.vn/my-pham-sakura" title="Sản phẩm" class="img_menu" ><img src="https://sakurabeauty.vn/data/banner/8657fbc525b19ef38f4601a04dade351.jpg"  alt="Sản phẩm" width="250" id="category_product" ></a>
+                                <div class="right_menu">
+                                    <div class="sub_cate_r"><a href="https://sakurabeauty.vn/cham-soc-da-mat" class="icon">
+                                        Chăm sóc da mặt                </a>
+                                        <a href="https://sakurabeauty.vn/sua-rua-mat"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/04e21f9997b1327e39148d5da9f24128.jpg','https://sakurabeauty.vn/sua-rua-mat')">
+                                        Sữa rửa mặt                </a>
+                                        <a href="https://sakurabeauty.vn/tay-da-chet-toner"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/b08df01065f309295b6964a49ad2b312.jpg','https://sakurabeauty.vn/tay-da-chet-toner')">
+                                        Tẩy da chết  &amp; toner                </a>
+                                        <a href="https://sakurabeauty.vn/trang-diem"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/533099b2326cd82a23ef433cb6317623.jpg','https://sakurabeauty.vn/trang-diem')">
+                                        Trang điểm                </a>
+                                        <a href="https://sakurabeauty.vn/chong-nang"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/ad2f278b634b16e6f59e52db17b8220e.jpg','https://sakurabeauty.vn/chong-nang')">
+                                        Chống nắng                </a>
+                                        <a href="https://sakurabeauty.vn/mat-na"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/58213273aa07ac3bb21860c83c4c6b85.jpg','https://sakurabeauty.vn/mat-na')">
+                                        Mặt nạ                </a>
+                                        <a href="https://sakurabeauty.vn/dieu-tri-mun"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/6d98cd5e6866def6ca2abc32a822c181.jpg','https://sakurabeauty.vn/dieu-tri-mun')">
+                                        Giảm mụn                </a>
+                                        <a href="https://sakurabeauty.vn/dieu-tri-nam"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/5ae8293380a92ea327d629e6ee10ee8a.jpg','https://sakurabeauty.vn/dieu-tri-nam')">
+                                        Giảm nám                </a>
+                                        <a href="https://sakurabeauty.vn/phuc-hoi-da"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/02f6dbe41c2752b56679fdd50ff00ba7.jpg','https://sakurabeauty.vn/phuc-hoi-da')">
+                                        Phục hồi da                </a>
+                                        <a href="https://sakurabeauty.vn/chong-lao-hoa"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/fd246c29c904b500a1f84a8fa5fd2917.png','https://sakurabeauty.vn/chong-lao-hoa')">
+                                        Chống lão hóa                </a>
+                                        <a href="https://sakurabeauty.vn/lam-trang-da"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/e8f78b12c8ab726462d5ba03bb0f0934.jpg','https://sakurabeauty.vn/lam-trang-da')">
+                                        Làm trắng da                </a>
+                                    </div>
+                                    <div class="sub_cate_r"><a href="https://sakurabeauty.vn/cham-soc-body" class="icon">
+                                        Chăm sóc body                </a>
+                                        <a href="https://sakurabeauty.vn/tay-te-bao-chet"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/fb06ebad74e262930f36b636eba74958.jpg','https://sakurabeauty.vn/tay-te-bao-chet')">
+                                        Tẩy tế bào chết                </a>
+                                        <a href="https://sakurabeauty.vn/lam-trang-body"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/e43718614dc33347be726a4ba8dca119.jpg','https://sakurabeauty.vn/lam-trang-body')">
+                                        Làm trắng body                </a>
+                                        <a href="https://sakurabeauty.vn/duong-am"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/1d42bad6d13d2863fa4189a7e83f0c95.jpg','https://sakurabeauty.vn/duong-am')">
+                                        Dưỡng ẩm                </a>
+                                    </div>
+                                    <div class="sub_cate_r"><a href="https://sakurabeauty.vn/vien-uong-bo-sung" class="icon">
+                                        Viên uống bổ sung                </a>
+                                        <a href="https://sakurabeauty.vn/giam-nam-da-dom-nau"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/546c2eec5832ed83ee2aaa14dc256926.png','https://sakurabeauty.vn/giam-nam-da-dom-nau')">
+                                        Giảm nám da và đốm nâu                </a>
+                                        <a href="https://sakurabeauty.vn/phuc-hoi-va-tre-hoa-da"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/6e4437554d3a8a382c9707071ce7b98e.png','https://sakurabeauty.vn/phuc-hoi-va-tre-hoa-da')">
+                                        Phục hồi và trẻ hóa da                </a>
+                                        <a href="https://sakurabeauty.vn/dep-da-tang-cuong-suc-khoe"  onmouseover="chang_img_category('https://sakurabeauty.vn/data/banner/2310d817e0bfc044811b10b21abafa43.jpg','https://sakurabeauty.vn/dep-da-tang-cuong-suc-khoe')">
+                                        Đẹp da &amp; tăng cường sức khỏe                </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub menu">
+                            <a class="titlea" href="https://sakurabeauty.vn/bac-si-sakura"> CHUYÊN GIA TƯ VẤN </a>
+                            <div class="sub_hi sub_Content ccth" style="display: none;">
+                                <a href="https://sakurabeauty.vn/bac-si-sakura" title="Chuyên gia tư vấn" class="img_menu" ><img src="https://sakurabeauty.vn/data/banner/e1f6519c64af09ae5b6d1902b3319fa9.png"  alt="Chuyên gia tư vấn" width="250" ></a>
+                                <div class="right_menu">  <a href="https://sakurabeauty.vn/kien-thuc-tong-quat-ve-da">Kiến thức về da</a> <a href="https://sakurabeauty.vn/hoi-dap-voi-bac-si">Hỏi đáp bác sĩ</a> <a href="https://sakurabeauty.vn/dat-lich-kham-bac-si">Đặt lịch khám bác sĩ</a> </div>
+                            </div>
+                        </div>
+                        <div class="sub menu">
+                            <a class="titlea last" href="https://sakurabeauty.vn/beauty-tips"> LÀM ĐẸP </a>
+                            <div class="sub_hi sub_Content bqld" style="display: none;">
+                                <a href="https://sakurabeauty.vn/beauty-tips" title="Làm đẹp" class="img_menu" ><img src="https://sakurabeauty.vn/data/banner/0a0081df06acf38e3cfa3d20ed0dacd8.jpg"  alt="Làm đẹp" width="250" ></a>
+                                <div class="right_menu"> <a href="https://sakurabeauty.vn/beauty-tips"> Bí quyết làm đẹp </a> <a href="https://sakurabeauty.vn/beauty-tips">Review sản phẩm</a> <a href="https://sakurabeauty.vn/beauty-tips">Xu hướng làm đẹp</a>  </div>
+                            </div>
+                        </div>
+                        <div class="sub menu">
+                            <a class="titlea" href="https://sakurabeauty.vn/tin-tuc"> TIN TỨC </a>
+                            <div class="sub_hi sub_Content tin_t" style="display: none;">
+                                <a href="https://sakurabeauty.vn/tin-tuc" title="Tin tức" class="img_menu" ><img src="https://sakurabeauty.vn/data/banner/a29261156edc0fa46549ed753e32f75e.jpg"  alt="Tin tức" width="250" ></a>
+                                <div class="right_menu"> <a href="https://sakurabeauty.vn/cac-hoat-dong-tieu-bieu">Tin tức Sakura</a> <a href="https://sakurabeauty.vn/thong-cao-bao-chi">Tin tức thị trường</a> <a href="https://sakurabeauty.vn/khuyen-mai">Khuyến mãi</a> </div>
+                            </div>
+                        </div>
+                        <div class="sub menu">
+                            <a class="titlea" href="https://sakurabeauty.vn/he-thong-phan-phoi-sakura"> HỆ THỐNG PHÂN PHỐI </a>
+                            <div class="sub_hi sub_Content tin_t" style="display: none;">
+                                <a href="https://sakurabeauty.vn/he-thong-phan-phoi-sakura" title="Hệ thống phân phối" class="img_menu" ><img src="https://sakurabeauty.vn/data/banner/e4ced54810307ec59ac3c57f150ebb21.png"  alt="Hệ thống phân phối" width="250" ></a>
+                                <div class="right_menu"> <a href="https://sakurabeauty.vn/showroom-sakura"> Showroom </a> <a href="https://sakurabeauty.vn/store"> Dug Store </a> <a href="https://sakurabeauty.vn/clinic-spa-sakura"> Clinic & Spa </a> <a href="https://sakurabeauty.vn/nha-thuoc-sakura"> Nhà thuốc </a> <a href="https://sakurabeauty.vn/nha-phan-phoi-sakura"> Grocery Store </a> <a href="https://sakurabeauty.vn/dai-ly-sakura"> Đại lý ủy quyền </a> </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="home">
+            <div  class="banner_news">
+                <a href="https://sakurabeauty.vn/khuyen-mai/da-them-xinh-rinh-qua-lon.html" title="KHUYẾN MẠI THÁNG 12" ><img src="https://sakurabeauty.vn/data/banner/c03c6be505e6da17b69f0c53b395afc7.jpg"  alt="KHUYẾN MẠI THÁNG 12" ></a>
+                <a href="https://sakurabeauty.vn/cau-chuyen-thuong-hieu/thanh-hang-tro-thanh-dai-su-thuong-hieu-sakura.html" title="Đại sứ thương hiệu Thanh Hằng " ><img src="https://sakurabeauty.vn/data/banner/fd4cfc73765ab522ec6b2e33a787e4ce.jpg"  alt="Đại sứ thương hiệu Thanh Hằng " ></a>
+            </div>
+            <div class="group group_product container">
+                <div class="titile_home"><a href="https://sakurabeauty.vn/san-pham-ban-chay" title="Sản phẩm bán chạy">Sản phẩm bán chạy</a></div>
+                <div class="list_product_h list_product_slide ">
+                    <div class="item">
+                        <div class="images" > <a  title="HCL White Blossoms EX" href="https://sakurabeauty.vn/sakura-hcl-white-blossoms-ex.html">
+                            <img   alt="HCL White Blossoms EX" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-White_Blossoms.jpg"  />        </a>
+                        </div>
+                        <h2><a title="HCL White Blossoms EX" href="https://sakurabeauty.vn/sakura-hcl-white-blossoms-ex.html">
+                            HCL White Blossoms EX          </a> 
+                        </h2>
+                        <h3><a title="HCL White Blossoms EX" href="https://sakurabeauty.vn/sakura-hcl-white-blossoms-ex.html">
+                            Viên uống giảm nám, tàn nhang và đốm nâu          </a> 
+                        </h3>
+                        <div class="price">
+                            1.575.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="HCL White Blossoms EX" href="https://sakurabeauty.vn/sakura-hcl-white-blossoms-ex.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Active Brightening Complex" href="https://sakurabeauty.vn/sakura-active-brightening-complex.html">
+                            <img   alt="Sakura Active Brightening Complex" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Brightening_Complex.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Active Brightening Complex" href="https://sakurabeauty.vn/sakura-active-brightening-complex.html">
+                            Sakura Active Brightening Complex          </a> 
+                        </h2>
+                        <h3><a title="Sakura Active Brightening Complex" href="https://sakurabeauty.vn/sakura-active-brightening-complex.html">
+                            Enzyme làm mờ vết nám chuyên sâu          </a> 
+                        </h3>
+                        <div class="price">
+                            1.455.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:100%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Active Brightening Complex" href="https://sakurabeauty.vn/sakura-active-brightening-complex.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="BỘ SẢN PHẨM GIẢM NÁM TRONG ỨNG NGOẠI HỢP CHUYÊN SÂU" href="https://sakurabeauty.vn/bo-san-pham-anh-dao-trang-fuji.html">
+                            <img   alt="BỘ SẢN PHẨM GIẢM NÁM TRONG ỨNG NGOẠI HỢP CHUYÊN SÂU" src="https://sakurabeauty.vn/media/sanpham/1571418000/small-CN-_HCL-ENZYM-PHYSICAL-17.jpg"  />        </a>
+                        </div>
+                        <h2><a title="BỘ SẢN PHẨM GIẢM NÁM TRONG ỨNG NGOẠI HỢP CHUYÊN SÂU" href="https://sakurabeauty.vn/bo-san-pham-anh-dao-trang-fuji.html">
+                            BỘ SẢN PHẨM GIẢM NÁM TRONG ỨNG NGOẠI HỢP CHUYÊN SÂU          </a> 
+                        </h2>
+                        <h3><a title="BỘ SẢN PHẨM GIẢM NÁM TRONG ỨNG NGOẠI HỢP CHUYÊN SÂU" href="https://sakurabeauty.vn/bo-san-pham-anh-dao-trang-fuji.html">
+                            Giảm nám chuyên sâu nhờ các sản phẩm nội công - ngoại kích, bảo vệ ngăn ngừa thâm nám quay trở lại          </a> 
+                        </h3>
+                        <div class="price">
+                            3.985.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="BỘ SẢN PHẨM GIẢM NÁM TRONG ỨNG NGOẠI HỢP CHUYÊN SÂU" href="https://sakurabeauty.vn/bo-san-pham-anh-dao-trang-fuji.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html">
+                            <img   alt="Sakura CC Cream Flawless Control Base" src="https://sakurabeauty.vn/media/sanpham/1568134800/small-CC_Cream_New.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html">
+                            Sakura CC Cream Flawless Control Base          </a> 
+                        </h2>
+                        <h3><a title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html">
+                            Che phủ nhẹ nhàng, chống nắng vượt trội, sáng đều màu da          </a> 
+                        </h3>
+                        <div class="price">
+                            900.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:100%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Luminous" href="https://sakurabeauty.vn/sakura-luminous.html">
+                            <img   alt="Sakura Luminous" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Luminous1.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Luminous" href="https://sakurabeauty.vn/sakura-luminous.html">
+                            Sakura Luminous          </a> 
+                        </h2>
+                        <h3><a title="Sakura Luminous" href="https://sakurabeauty.vn/sakura-luminous.html">
+                            Viên uống trắng da chống nắng - khoẻ đẹp từ bên trong          </a> 
+                        </h3>
+                        <div class="price">
+                            2.950.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Luminous" href="https://sakurabeauty.vn/sakura-luminous.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html">
+                            <img   alt="Sakura Eye Contour Serum" src="https://sakurabeauty.vn/media/sanpham/1557075600/small-Eye_Contour.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html">
+                            Sakura Eye Contour Serum          </a> 
+                        </h2>
+                        <h3><a title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html">
+                            Hoạt chất Retinol chuyên sâu xóa mờ nếp nhăn, chống quầng thâm và giảm bọng mắt          </a> 
+                        </h3>
+                        <div class="price">
+                            1.195.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html">
+                            <img   alt="Sakura Sunpill" src="https://sakurabeauty.vn/media/sanpham/1557766800/small-SunPill_bottle-fn_2.png"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html">
+                            Sakura Sunpill          </a> 
+                        </h2>
+                        <h3><a title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html">
+                            Viên uống chống nắng sinh học toàn thân          </a> 
+                        </h3>
+                        <div class="price">
+                            895.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Bộ sản phẩm điều trị và chăm sóc da sạm – nám cao cấp" href="https://sakurabeauty.vn/bo-san-pham-dieu-tri-va-cham-soc-da-sam-nam.html">
+                            <img   alt="Bộ sản phẩm điều trị và chăm sóc da sạm – nám cao cấp" src="https://sakurabeauty.vn/media/sanpham/1560186000/small-Bộ_nám.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Bộ sản phẩm điều trị và chăm sóc da sạm – nám cao cấp" href="https://sakurabeauty.vn/bo-san-pham-dieu-tri-va-cham-soc-da-sam-nam.html">
+                            Bộ sản phẩm điều trị và chăm sóc da sạm – nám cao cấp          </a> 
+                        </h2>
+                        <h3><a title="Bộ sản phẩm điều trị và chăm sóc da sạm – nám cao cấp" href="https://sakurabeauty.vn/bo-san-pham-dieu-tri-va-cham-soc-da-sam-nam.html">
+                            Kem giảm nám chuyên sâu ngày đêm, Enzyme giảm nám & viên uống giảm nám, trắng da          </a> 
+                        </h3>
+                        <div class="price">
+                            8.380.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Bộ sản phẩm điều trị và chăm sóc da sạm – nám cao cấp" href="https://sakurabeauty.vn/bo-san-pham-dieu-tri-va-cham-soc-da-sam-nam.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Physical Daily Defense 60G" href="https://sakurabeauty.vn/sakura-physical-daily-defense.html">
+                            <img   alt="Sakura Physical Daily Defense 60G" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Physical_Daily_Defense_big.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Physical Daily Defense 60G" href="https://sakurabeauty.vn/sakura-physical-daily-defense.html">
+                            Sakura Physical Daily Defense 60G          </a> 
+                        </h2>
+                        <h3><a title="Sakura Physical Daily Defense 60G" href="https://sakurabeauty.vn/sakura-physical-daily-defense.html">
+                            Nhũ tương chống nắng vật lý Physical Daily Defense SPF 50+ PA++++          </a> 
+                        </h3>
+                        <div class="price">
+                            955.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Physical Daily Defense 60G" href="https://sakurabeauty.vn/sakura-physical-daily-defense.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html">
+                            <img   alt="Sakura 3D Face Mask" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-3D_FaceMask.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html">
+                            Sakura 3D Face Mask          </a> 
+                        </h2>
+                        <h3><a title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html">
+                            Mặt nạ siêu cấp ẩm quyền năng, nâng cơ, bừng sáng làn da          </a> 
+                        </h3>
+                        <div class="price">
+                            829.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura balancing toner" href="https://sakurabeauty.vn/nuoc-can-bang-da-sakura-balancing-toner.html">
+                            <img   alt="Sakura balancing toner" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Balancing_Toner.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura balancing toner" href="https://sakurabeauty.vn/nuoc-can-bang-da-sakura-balancing-toner.html">
+                            Sakura balancing toner          </a> 
+                        </h2>
+                        <h3><a title="Sakura balancing toner" href="https://sakurabeauty.vn/nuoc-can-bang-da-sakura-balancing-toner.html">
+                            Nước cân bằng da          </a> 
+                        </h3>
+                        <div class="price">
+                            1.150.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura balancing toner" href="https://sakurabeauty.vn/nuoc-can-bang-da-sakura-balancing-toner.html"> Xem ngay </a> 
+                        <span class="best">Best Seller</span>	
+                    </div>
+                </div>
+            </div>
+            <div class="banner_bt_bc container">
+            </div>
+            <div class="hboxLde container">
+                <h2 class="titile"><a href="https://sakurabeauty.vn/beauty-tips">Làm đẹp</a></h2>
+                <div class="group_news news_action">
+                    <div class="list_news">
+                        <div class="item item_big">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/beauty-tips/giat-minh-voi-nguyen-nhan-khien-da-thuong-noi-mun-vao-mua-dong.html" title="GIẬT MÌNH VỚI NGUYÊN NHÂN KHIẾN DA THƯỜNG NỔI MỤN VÀO MÙA ĐÔNG">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1575565200/sai_lam_7.jpg" alt="GIẬT MÌNH VỚI NGUYÊN NHÂN KHIẾN DA THƯỜNG NỔI MỤN VÀO MÙA ĐÔNG" width="100%" title="GIẬT MÌNH VỚI NGUYÊN NHÂN KHIẾN DA THƯỜNG NỔI MỤN VÀO MÙA ĐÔNG"/>            </a>
+                            </div>
+                            <h2 class="title_news"><a href="https://sakurabeauty.vn/beauty-tips/giat-minh-voi-nguyen-nhan-khien-da-thuong-noi-mun-vao-mua-dong.html" title="GIẬT MÌNH VỚI NGUYÊN NHÂN KHIẾN DA THƯỜNG NỔI MỤN VÀO MÙA ĐÔNG">
+                                GIẬT MÌNH VỚI NGUYÊN NHÂN KHIẾN DA THƯỜNG NỔI MỤN VÀO MÙA ĐÔNG            </a>
+                            </h2>
+                            <div class="des_in"><span class="date">
+                                06/12/2019            </span> <span class="view">
+                                17            </span> <span class="cate"> -
+                                Beauty Tips            </span> 
+                            </div>
+                            <div class="des">
+                                Thật bất ngờ khi làn da lại có xu hướng nổi mụn nhiều hơn vào mùa đông, thử tìm ra những nguyên nhân không khỏi khiến bạn giật mình          
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/beauty-tips/4-bieu-hien-cua-lan-da-canh-bao-van-de-suc-khoe.html" title="4 BIỂU HIỆN CỦA LÀN DA CẢNH BÁO VẤN ĐỀ SỨC KHỎE">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1574355600/mua-dong-dung-quen-chong-nang-4.jpg" alt="4 BIỂU HIỆN CỦA LÀN DA CẢNH BÁO VẤN ĐỀ SỨC KHỎE" width="100%" title="4 BIỂU HIỆN CỦA LÀN DA CẢNH BÁO VẤN ĐỀ SỨC KHỎE"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/beauty-tips/4-bieu-hien-cua-lan-da-canh-bao-van-de-suc-khoe.html" title="4 BIỂU HIỆN CỦA LÀN DA CẢNH BÁO VẤN ĐỀ SỨC KHỎE">
+                                4 BIỂU HIỆN CỦA LÀN DA CẢNH BÁO VẤN ĐỀ SỨC KHỎE            </a>
+                            </h2>
+                            <div class="date">
+                                21/11/2019          
+                            </div>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/beauty-tips/mua-dong-dung-quen-chong-nang.html" title="MÙA ĐÔNG ĐỪNG QUÊN CHỐNG NẮNG">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1574096400/mua-dong-dung-quen-chong-nang_-1.jpg" alt="MÙA ĐÔNG ĐỪNG QUÊN CHỐNG NẮNG" width="100%" title="MÙA ĐÔNG ĐỪNG QUÊN CHỐNG NẮNG"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/beauty-tips/mua-dong-dung-quen-chong-nang.html" title="MÙA ĐÔNG ĐỪNG QUÊN CHỐNG NẮNG">
+                                MÙA ĐÔNG ĐỪNG QUÊN CHỐNG NẮNG            </a>
+                            </h2>
+                            <div class="date">
+                                19/11/2019          
+                            </div>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/beauty-tips/4-bi-mat-chong-lao-hoa-da-duoc-cac-chuyen-gia-bat-mi.html" title="4 BÍ MẬT CHỐNG LÃO HÓA DA ĐƯỢC CÁC CHUYÊN GIA BẬT MÍ">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1574010000/anh_2.jpg" alt="4 BÍ MẬT CHỐNG LÃO HÓA DA ĐƯỢC CÁC CHUYÊN GIA BẬT MÍ" width="100%" title="4 BÍ MẬT CHỐNG LÃO HÓA DA ĐƯỢC CÁC CHUYÊN GIA BẬT MÍ"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/beauty-tips/4-bi-mat-chong-lao-hoa-da-duoc-cac-chuyen-gia-bat-mi.html" title="4 BÍ MẬT CHỐNG LÃO HÓA DA ĐƯỢC CÁC CHUYÊN GIA BẬT MÍ">
+                                4 BÍ MẬT CHỐNG LÃO HÓA DA ĐƯỢC CÁC CHUYÊN GIA BẬT MÍ            </a>
+                            </h2>
+                            <div class="date">
+                                18/11/2019          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group group_product container">
+                <div class="titile_home"><a href="https://sakurabeauty.vn/san-pham-moi" title="Sản phẩm mới">Sản phẩm mới</a></div>
+                <div class="list_product_h list_product_slide ">
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html">
+                            <img   alt="Sakura CC Cream Flawless Control Base" src="https://sakurabeauty.vn/media/sanpham/1568134800/small-CC_Cream_New.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html">
+                            Sakura CC Cream Flawless Control Base          </a> 
+                        </h2>
+                        <h3><a title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html">
+                            Che phủ nhẹ nhàng, chống nắng vượt trội, sáng đều màu da          </a> 
+                        </h3>
+                        <div class="price">
+                            900.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:100%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura CC Cream Flawless Control Base" href="https://sakurabeauty.vn/kem-trang-diem-chong-nang-sakura-cc-cream-flawless-control-base.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Concentrated Brightening Serum" href="https://sakurabeauty.vn/Sakura-concentrated-brightening-serum.html">
+                            <img   alt="Sakura Concentrated Brightening Serum" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Brightening_Serum.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Concentrated Brightening Serum" href="https://sakurabeauty.vn/Sakura-concentrated-brightening-serum.html">
+                            Sakura Concentrated Brightening Serum          </a> 
+                        </h2>
+                        <h3><a title="Sakura Concentrated Brightening Serum" href="https://sakurabeauty.vn/Sakura-concentrated-brightening-serum.html">
+                            Serum dưỡng da trắng sáng, giảm các dấu hiệu lão hóa.          </a> 
+                        </h3>
+                        <div class="price">
+                            975.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Concentrated Brightening Serum" href="https://sakurabeauty.vn/Sakura-concentrated-brightening-serum.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html">
+                            <img   alt="Sakura Eye Contour Serum" src="https://sakurabeauty.vn/media/sanpham/1557075600/small-Eye_Contour.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html">
+                            Sakura Eye Contour Serum          </a> 
+                        </h2>
+                        <h3><a title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html">
+                            Hoạt chất Retinol chuyên sâu xóa mờ nếp nhăn, chống quầng thâm và giảm bọng mắt          </a> 
+                        </h3>
+                        <div class="price">
+                            1.195.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Eye Contour Serum" href="https://sakurabeauty.vn/sakura-eye-contour-serum.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Spots Care Brightening Cream" href="https://sakurabeauty.vn/spots-care-brightening-cream.html">
+                            <img   alt="Sakura Spots Care Brightening Cream" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Spot_Care_Brightening_2.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Spots Care Brightening Cream" href="https://sakurabeauty.vn/spots-care-brightening-cream.html">
+                            Sakura Spots Care Brightening Cream          </a> 
+                        </h2>
+                        <h3><a title="Sakura Spots Care Brightening Cream" href="https://sakurabeauty.vn/spots-care-brightening-cream.html">
+                            Kem dưỡng trắng, ngăn ngừa sạm nám, chậm quá trình lão hoá và phục hồi tổn thương do ánh sáng mặt trời          </a> 
+                        </h3>
+                        <div class="price">
+                            955.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Spots Care Brightening Cream" href="https://sakurabeauty.vn/spots-care-brightening-cream.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html">
+                            <img   alt="Sakura Sunpill" src="https://sakurabeauty.vn/media/sanpham/1557766800/small-SunPill_bottle-fn_2.png"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html">
+                            Sakura Sunpill          </a> 
+                        </h2>
+                        <h3><a title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html">
+                            Viên uống chống nắng sinh học toàn thân          </a> 
+                        </h3>
+                        <div class="price">
+                            895.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Sunpill" href="https://sakurabeauty.vn/sakura-sunpill.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura AcnePill" href="https://sakurabeauty.vn/sakura-acnepill.html">
+                            <img   alt="Sakura AcnePill" src="https://sakurabeauty.vn/media/sanpham/1563469200/small-Sakura_ACNE_Pill1.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura AcnePill" href="https://sakurabeauty.vn/sakura-acnepill.html">
+                            Sakura AcnePill          </a> 
+                        </h2>
+                        <h3><a title="Sakura AcnePill" href="https://sakurabeauty.vn/sakura-acnepill.html">
+                            Viên uống giảm mụn, xóa tan sẹo thâm          </a> 
+                        </h3>
+                        <div class="price">
+                            695.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura AcnePill" href="https://sakurabeauty.vn/sakura-acnepill.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html">
+                            <img   alt="Sakura 3D Face Mask" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-3D_FaceMask.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html">
+                            Sakura 3D Face Mask          </a> 
+                        </h2>
+                        <h3><a title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html">
+                            Mặt nạ siêu cấp ẩm quyền năng, nâng cơ, bừng sáng làn da          </a> 
+                        </h3>
+                        <div class="price">
+                            829.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura 3D Face Mask" href="https://sakurabeauty.vn/sakura-3d-face-mask.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Spots Care Brightening Cream (13G)" href="https://sakurabeauty.vn/spots-care-brightening-cream-13g.html">
+                            <img   alt="Sakura Spots Care Brightening Cream (13G)" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Spot_Care_Brightening_13g.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Spots Care Brightening Cream (13G)" href="https://sakurabeauty.vn/spots-care-brightening-cream-13g.html">
+                            Sakura Spots Care Brightening Cream (13G)          </a> 
+                        </h2>
+                        <h3><a title="Sakura Spots Care Brightening Cream (13G)" href="https://sakurabeauty.vn/spots-care-brightening-cream-13g.html">
+                            Kem dưỡng trắng, ngăn ngừa sạm nám, chậm quá trình lão hoá và phục hồi tổn thương do ánh sáng mặt trời          </a> 
+                        </h3>
+                        <div class="price">
+                            495.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Spots Care Brightening Cream (13G)" href="https://sakurabeauty.vn/spots-care-brightening-cream-13g.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                    <div class="item">
+                        <div class="images" > <a  title="Sakura Physical Daily Defense SPF 50+ PA ++++ 30g" href="https://sakurabeauty.vn/nhu-tuong-chong-nang-vat-ly-sakura-physical-daily-defense-spf-50-pa-30g.html">
+                            <img   alt="Sakura Physical Daily Defense SPF 50+ PA ++++ 30g" src="https://sakurabeauty.vn/media/sanpham/1556125200/small-Physical_Daily_Defense_small.jpg"  />        </a>
+                        </div>
+                        <h2><a title="Sakura Physical Daily Defense SPF 50+ PA ++++ 30g" href="https://sakurabeauty.vn/nhu-tuong-chong-nang-vat-ly-sakura-physical-daily-defense-spf-50-pa-30g.html">
+                            Sakura Physical Daily Defense SPF 50+ PA ++++ 30g          </a> 
+                        </h2>
+                        <h3><a title="Sakura Physical Daily Defense SPF 50+ PA ++++ 30g" href="https://sakurabeauty.vn/nhu-tuong-chong-nang-vat-ly-sakura-physical-daily-defense-spf-50-pa-30g.html">
+                            Chống nắng, bảo vệ da khỏi tác động gây hại từ ánh nắng mặt trời.          </a> 
+                        </h3>
+                        <div class="price">
+                            495.000          đ
+                        </div>
+                        <div class="ratings">
+                            <div class="rating-box">
+                                <div class="rating" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <a class="xem_n" title="Sakura Physical Daily Defense SPF 50+ PA ++++ 30g" href="https://sakurabeauty.vn/nhu-tuong-chong-nang-vat-ly-sakura-physical-daily-defense-spf-50-pa-30g.html"> Xem ngay </a> <span class="new">New</span>	 
+                    </div>
+                </div>
+            </div>
+            <div class="hboxLde container">
+                <h2 class="titile"><a href="https://sakurabeauty.vn/tin-tuc" title="Tin tức">Tin tức</a></h2>
+                <div class="group_tt">
+                    <div class="list_news">
+                        <div class="item item_big">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/tin-tuc/chuyen-di-nhat-ban-gan-ket-dai-gia-dinh-sakura-beauty.html" title="Chuyến đi Nhật Bản gắn kết đại gia đình Sakura Beauty">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1575478800/Sakura-nhat-ban-bussiness-trip_(1).JPG" alt="Chuyến đi Nhật Bản gắn kết đại gia đình Sakura Beauty" width="100%" title="Chuyến đi Nhật Bản gắn kết đại gia đình Sakura Beauty"/>            </a>
+                            </div>
+                            <h2 class="title_news"><a href="https://sakurabeauty.vn/tin-tuc/chuyen-di-nhat-ban-gan-ket-dai-gia-dinh-sakura-beauty.html" title="Chuyến đi Nhật Bản gắn kết đại gia đình Sakura Beauty">
+                                Chuyến đi Nhật Bản gắn kết đại gia đình Sakura Beauty            </a>
+                            </h2>
+                            <div class="des_in"><span class="date">
+                                05/12/2019            </span> <span class="view">
+                                29            </span> <span class="cate"> -
+                                Truyền thông            </span> 
+                            </div>
+                            <div class="des">
+                                Hành trình 3 ngày tại Nhật Bản đã khép lại nhưng đã mở ra bao cảm xúc và sự gắn kết chặt chẽ giữa thương hiệu Sakura Beauty cùng các đối tác, các chuyên gia bác sĩ đã đồng hành trong suốt năm qua.          
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/khuyen-mai/da-them-xinh-rinh-qua-lon.html" title="DA THÊM XINH - RINH QUÀ LỚN LÊN TỚI 1.650.000VNĐ!!!">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1575392400/zalo_1200x675.jpg" alt="DA THÊM XINH - RINH QUÀ LỚN LÊN TỚI 1.650.000VNĐ!!!" width="100%" title="DA THÊM XINH - RINH QUÀ LỚN LÊN TỚI 1.650.000VNĐ!!!"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/khuyen-mai/da-them-xinh-rinh-qua-lon.html" title="DA THÊM XINH - RINH QUÀ LỚN LÊN TỚI 1.650.000VNĐ!!!">
+                                DA THÊM XINH - RINH QUÀ LỚN LÊN TỚI 1.650.000VNĐ!!!            </a>
+                            </h2>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/khuyen-mai/bung-no-black-friday-so-huu-bo-tu-quyen-nang-danh-bai-moi-goc-nam-voi-gia-cuc-soc.html" title="BÙNG NỔ BLACK FRIDAY - SỞ HỮU BỘ TỨ QUYỀN NĂNG ĐÁNH BẠI MỌI GỐC NÁM VỚI GIÁ CỰC SỐC">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1574701200/bung-no-black-friday-so-huu-bo-tu-quyen-nang-danh-bai-moi-goc-nam-voi-gia-cuc-soc-5.jpg" alt="BÙNG NỔ BLACK FRIDAY - SỞ HỮU BỘ TỨ QUYỀN NĂNG ĐÁNH BẠI MỌI GỐC NÁM VỚI GIÁ CỰC SỐC" width="100%" title="BÙNG NỔ BLACK FRIDAY - SỞ HỮU BỘ TỨ QUYỀN NĂNG ĐÁNH BẠI MỌI GỐC NÁM VỚI GIÁ CỰC SỐC"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/khuyen-mai/bung-no-black-friday-so-huu-bo-tu-quyen-nang-danh-bai-moi-goc-nam-voi-gia-cuc-soc.html" title="BÙNG NỔ BLACK FRIDAY - SỞ HỮU BỘ TỨ QUYỀN NĂNG ĐÁNH BẠI MỌI GỐC NÁM VỚI GIÁ CỰC SỐC">
+                                BÙNG NỔ BLACK FRIDAY - SỞ HỮU BỘ TỨ QUYỀN NĂNG ĐÁNH BẠI MỌI GỐC NÁM VỚI GIÁ CỰC SỐC            </a>
+                            </h2>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/cac-hoat-dong-tieu-bieu/cung-sakura-beauty-den-xu-so-hoa-anh-dao-chuyen-di-tri-an-doi-tac-chuyen-gia.html" title="CÙNG SAKURA BEAUTY ĐẾN XỨ SỞ HOA ANH ĐÀO: CHUYẾN ĐI TRI ÂN ĐỐI TÁC – CHUYÊN GIA">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1574355600/1200x628a.png" alt="CÙNG SAKURA BEAUTY ĐẾN XỨ SỞ HOA ANH ĐÀO: CHUYẾN ĐI TRI ÂN ĐỐI TÁC – CHUYÊN GIA" width="100%" title="CÙNG SAKURA BEAUTY ĐẾN XỨ SỞ HOA ANH ĐÀO: CHUYẾN ĐI TRI ÂN ĐỐI TÁC – CHUYÊN GIA"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/cac-hoat-dong-tieu-bieu/cung-sakura-beauty-den-xu-so-hoa-anh-dao-chuyen-di-tri-an-doi-tac-chuyen-gia.html" title="CÙNG SAKURA BEAUTY ĐẾN XỨ SỞ HOA ANH ĐÀO: CHUYẾN ĐI TRI ÂN ĐỐI TÁC – CHUYÊN GIA">
+                                CÙNG SAKURA BEAUTY ĐẾN XỨ SỞ HOA ANH ĐÀO: CHUYẾN ĐI TRI ÂN ĐỐI TÁC – CHUYÊN GIA            </a>
+                            </h2>
+                        </div>
+                        <div class="item_small">
+                            <div class="image_news"><a href="https://sakurabeauty.vn/cac-hoat-dong-tieu-bieu/can-tho-gop-ten-vao-ban-do-lam-dep-toan-quoc-cua-sakura-beauty.html" title="CẦN THƠ GÓP TÊN VÀO BẢN ĐỒ LÀM ĐẸP TOÀN QUỐC CỦA SAKURA BEAUTY">
+                                <img src="https://sakurabeauty.vn/media/tintuc/1573405200/can-tho-gop-ten-vao-ban-do-lam-dep-toan-quoc-cua-sakura-beauty-11.jpg" alt="CẦN THƠ GÓP TÊN VÀO BẢN ĐỒ LÀM ĐẸP TOÀN QUỐC CỦA SAKURA BEAUTY" width="100%" title="CẦN THƠ GÓP TÊN VÀO BẢN ĐỒ LÀM ĐẸP TOÀN QUỐC CỦA SAKURA BEAUTY"/>            </a>
+                            </div>
+                            <h2> <a href="https://sakurabeauty.vn/cac-hoat-dong-tieu-bieu/can-tho-gop-ten-vao-ban-do-lam-dep-toan-quoc-cua-sakura-beauty.html" title="CẦN THƠ GÓP TÊN VÀO BẢN ĐỒ LÀM ĐẸP TOÀN QUỐC CỦA SAKURA BEAUTY">
+                                CẦN THƠ GÓP TÊN VÀO BẢN ĐỒ LÀM ĐẸP TOÀN QUỐC CỦA SAKURA BEAUTY            </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video container">
+                <div class="titile_home"><a href="https://sakurabeauty.vn/video" title="Video">Video</a></div>
+                <div class="list_video">
+                    <div class="item">
+                        <div class="image_news">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/_xLUmrZ77N0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image_news">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/o5lTIq-x3Pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image_news">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/YcYzMagznvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image_news">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/5rtYzEx3Ntk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image_news">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/veyLhkBn1dI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skincare_showrrom container">
+                <div class="scincare">
+                    <a href="https://sakurabeauty.vn/showroom-sakura" title="https://sakurabeauty.vn/" ><img src="https://sakurabeauty.vn/data/banner/e4ee3b51bea8aa12bb69d016537976e9.png"  alt="https://sakurabeauty.vn/" ></a>
+                    <h3><a href="https://sakurabeauty.vn/showroom-sakura" title="https://sakurabeauty.vn/" >SKINCARE</a></h3>
+                </div>
+                <div class="showroom">
+                    <a href="https://sakurabeauty.vn/showroom-sakura" title="https://sakurabeauty.vn/" ><img src="https://sakurabeauty.vn/data/banner/15be8107f57d15c6d290a614d6e6048e.png"  alt="https://sakurabeauty.vn/" ></a>
+                    <h3><a href="https://sakurabeauty.vn/showroom-sakura" title="https://sakurabeauty.vn/" >SHOWROOM</a></h3>
+                </div>
+            </div>
+            <div class="slogan container">
+                <a href="https://sakurabeauty.vn/" title="Bác sĩ Kim" ><img src="https://sakurabeauty.vn/data/banner/c41e547e9e2a7dd4cad95eea18bb9a83.png"  alt="Bác sĩ Kim" ></a>
+            </div>
+        </section>
+        <footer>
+            <div class="container container_email">
+                <div class="connect"> <a class="fb" target="_blank" rel="nofollow" href="https://www.facebook.com/sakurabeautyvietnam.vn/" title="Facebook Sakura"> </a> <a class="ytb" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UC8I9xcE8ymv0A708STK6m5g" title="Kênh Youtube Sakura"> </a> <a class="itg" target="_blank" rel="nofollow" href="https://www.instagram.com/sakurabeauty.vn/" title="Instagram Sakura"> </a> <a class="zalo" target="_blank" rel="nofollow" href="" title="Zalo Sakura"> </a> </div>
+            </div>
+            <div class="footer-nav container">
+                <div class="footer-nav-add">
+                    <strong>
+                        <p >Về Sakura</p>
+                    </strong>
+                    <ul>
+                        <li><a href="https://sakurabeauty.vn/cau-chuyen-thuong-hieu" title="Câu chuyện thương hiệu">Câu chuyện thương hiệu</a></li>
+                        <li><a href="" title="Tuyển dụng">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-add">
+                    <strong>
+                        <p >Khách hàng</p>
+                    </strong>
+                    <ul>
+                        <li><a href="" title="Liên hệ">Liên hệ</a></li>
+                        <li><a href="https://sakurabeauty.vn/tim-dia-chi-mua-hang" title="Hệ thống mua hàng">Hệ thống mua hàng</a></li>
+                        <li><a href="" title="Dịch vụ khách hàng">Dịch vụ khách hàng</a></li>
+                        <li><a href="" title="FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-add">
+                    <strong>
+                        <p >Sản phẩm</p>
+                    </strong>
+                    <ul>
+                        <li><a href="https://sakurabeauty.vn/cham-soc-da-mat" title="Chăm sóc da mặt">Chăm sóc da mặt</a></li>
+                        <li><a href="https://sakurabeauty.vn/cham-soc-body" title="Chăm sóc body">Chăm sóc body</a></li>
+                        <li><a href="https://sakurabeauty.vn/vien-uong-bo-sung" title="Thực phẩm bổ sung">Thực phẩm bổ sung</a></li>
+                        <li><a href="https://sakurabeauty.vn/trang-diem" title="Trang điểm">Trang điểm</a></li>
+                        <li><a href="" title="Phân loại da">Phân loại da</a></li>
+                        <li><a href="" title="Bộ sưu tập">Bộ sưu tập</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-add footer_right">
+                    <div class="regisPhone">
+                        <input type="text" onFocus="if(this.value=='Email đăng ký nhận bản tin') this.value='';" onBlur="if(this.value=='') this.value='Email đăng ký nhận bản tin';" value="Email đăng ký nhận bản tin"  value="" name="emailKm" id="emailKm">
+                        <div class="iconsend" onclick="sendEmailNews();"> </div>
+                    </div>
+                    <div >
+                        <strong>
+                            <p  class="name_ct">Công ty TNHH Sakura Beauty Vietnam</p>
+                        </strong>
+                        <p >242 - 244 đường Hai Bà Trưng, Phường Tân Định, </p>
+                        Quận 1, Tp.<span >Hồ Chí Minh</span>, Vietnam<br />
+                    </div>
+                    <a class="tbbct" href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=9285" title="Đã thông báo với bộ công thương" rel="nofollow" target="_blank"><img src="https://sakurabeauty.vn//templates4/front/images/bct.png" alt="Đã thông báo với bộ công thương" /></a>
+                </div>
+            </div>
+            <div class="ft_dk_cp container">
+                <div class="left"><a href="" title="Điều khoản sử dụng">Điều khoản sử dụng</a> - <a href="" title="Điều khoản bảo mật">Điều khoản bảo mật</a> </div>
+                <div class="right_c" >© Sakura Beauty Vietnam</div>
+            </div>
+            <div class="cart_scroll"><a class="titlea last icon_cart" href="https://sakurabeauty.vn/gio-hang.html" title="Giỏ hàng"><span id="count_pro_scroll">
+                0    </span></a>
+            </div>
+            <div class="btn_back_to_top" title="Lên đầu trang"><span class="icon"></span></div>
+            <div id="poup_all_to"></div>
+        </footer>
+    </body>
+</html>
