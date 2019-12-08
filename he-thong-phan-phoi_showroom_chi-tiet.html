@@ -8,15 +8,135 @@
         </title>
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <link type="image/x-icon" href="https://sakurabeauty.vn/favicon.ico" rel="icon" />
-        <link href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link id="styles" href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/carousel.js"></script>
         <script type="text/javascript" src="js/general.js"></script>
         <script type="text/javascript" src="js/sticky.js"></script>
         <script type="text/javascript" src="js/popup.js"></script>
     </head>
+    <script>
+    var w = window.innerWidth;
+    if (w < 1024) {
+        document.getElementById("styles").href = 'css/styleMobile.min.css';
+    }
+    $(function(){
+        $('#Capa_1').click(function(){
+            $('nav').toggle();
+        });
+        $('#searchMain').click(function(){
+            $('.boxSearch').toggle();
+        });
+    })
+    </script>
     <body>
-        <header>
+        <!-- header mobile -->
+        <header class="mobile">
+            <div class="item iconMenu">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;" xml:space="preserve">
+                    <g>
+                        <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"></path>
+                        <path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z"></path>
+                        <path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z"></path>
+                    </g>
+                </svg>
+            </div>
+            <div id="searchMain" class="item iconSearch">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+                    <g>
+                        <path d="M495,466.2L377.2,348.4c29.2-35.6,46.8-81.2,46.8-130.9C424,103.5,331.5,11,217.5,11C103.4,11,11,103.5,11,217.5   S103.4,424,217.5,424c49.7,0,95.2-17.5,130.8-46.7L466.1,495c8,8,20.9,8,28.9,0C503,487.1,503,474.1,495,466.2z M217.5,382.9   C126.2,382.9,52,308.7,52,217.5S126.2,52,217.5,52C308.7,52,383,126.3,383,217.5S308.7,382.9,217.5,382.9z"></path>
+                    </g>
+                </svg>
+            </div>
+            <h1> <strong> Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty </strong><a title="Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty" href="https://sakurabeauty.vn/"> <img src="https://sakurabeauty.vn/templates4/front/images/logo.png" alt="Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty" title="Mỹ Phẩm Sakura -  Dược Mỹ Phẩm Cao Cấp Nhật Bản - Sakura Beauty" width="100"></a> </h1>
+            <a href="https://sakurabeauty.vn/he-thong-phan-phoi-sakura" class="item iconLocaltion">
+                <svg viewBox="0 0 48 64">
+                    <g class="b">
+                        <path d="M24,0A24,24,0,0,0,0,24C0,40,24,64,24,64S48,40,48,24A24,24,0,0,0,24,0m0,8A16,16,0,1,1,8,24,16,16,0,0,1,24,8"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://sakurabeauty.vn/gio-hang.html" class="item iconBag">
+                <svg aria-hidden="true" data-prefix="fal" data-icon="shopping-bag" class="svg-inline--fa fa-shopping-bag fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M352 128C352 57.421 294.579 0 224 0 153.42 0 96 57.421 96 128H0v304c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V128h-96zM224 32c52.935 0 96 43.065 96 96H128c0-52.935 43.065-96 96-96zm192 400c0 26.467-21.533 48-48 48H80c-26.467 0-48-21.533-48-48V160h64v48c0 8.837 7.164 16 16 16s16-7.163 16-16v-48h192v48c0 8.837 7.163 16 16 16s16-7.163 16-16v-48h64v272z"></path>
+                </svg>
+            </a>
+            <div class="boxSearch">
+                <div class="boxSearchBd">
+                    <input type="text" autocomplete="off" name="q" value="" placeholder="Gõ từ khóa cần tìm" class="txtSearch" id="search_top">
+                </div>
+                <div class="group_cart" style="display: none;">
+                    <a class="sub see" href="https://sakurabeauty.vn/gio-hang.html" title="Xem giỏ hàng">Xem giỏ hàng (<span id="count_pro">0</span>)</a>
+                </div>
+                <div class="iconsearchV"></div>
+            </div>
+            <nav style="display: none;">
+                <div class="menu"> 
+                    <a class="titlea" href="https://sakurabeauty.vn/">Trang chủ </a>
+                </div>
+                <div class="sub menu">
+                    <div class="icon"><a class="titlea" href="#"> Về Sakura </a></div>
+                    <ul class="sub_hi sub_Content">
+                        <li><a href="https://sakurabeauty.vn/cau-chuyen-thuong-hieu"> Câu chuyện thương hiệu </a></li>
+                        <li><a href="https://sakurabeauty.vn/video">Video</a></li>
+                    </ul>
+                </div>
+                <div class="sub menu">
+                    <div class="icon"><a class="titlea" href="#"> Sản phẩm </a></div>
+                    <ul class="sub_hi">
+                        <li><a href="https://sakurabeauty.vn/cham-soc-da-mat" title="Chăm sóc da mặt">Chăm sóc da mặt</a></li>
+                        <li><a href="https://sakurabeauty.vn/cham-soc-body" title="Chăm sóc body">Chăm sóc body</a></li>
+                        <li><a href="https://sakurabeauty.vn/vien-uong-bo-sung" title="Viên uống bổ sung">Viên uống bổ sung</a></li>
+                    </ul>
+                </div>
+                <div class="sub menu">
+                    <div class="icon"><a class="titlea" href="#"> Chuyên gia tư vấn </a></div>
+                    <ul class="sub_hi sub_Content">
+                        <li><a href="https://sakurabeauty.vn/kien-thuc-tong-quat-ve-da">Kiến thức về da</a></li>
+                        <li><a href="https://sakurabeauty.vn/hoi-dap-voi-bac-si">Hỏi đáp bác sĩ</a></li>
+                        <li><a href="https://sakurabeauty.vn/dat-lich-kham-bac-si">Đặt lịch khám bác sĩ</a></li>
+                    </ul>
+                </div>
+                <div class="sub menu">
+                    <div class="icon"><a class="titlea" href="#"> Làm đẹp </a></div>
+                    <ul class="sub_hi sub_Content">
+                        <li><a href="https://sakurabeauty.vn/beauty-tips"> Bí quyết làm đẹp </a></li>
+                        <li><a href="https://sakurabeauty.vn/beauty-tips">Review sản phẩm</a></li>
+                        <li><a href="https://sakurabeauty.vn/beauty-tips">Xu hướng làm đẹp</a></li>
+                    </ul>
+                </div>
+                <div class="sub menu">
+                    <div class="icon"><a class="titlea" href="#"> Tin tức </a></div>
+                    <ul class="sub_hi sub_Content">
+                        <li><a href="https://sakurabeauty.vn/cac-hoat-dong-tieu-bieu">Tin tức Sakura</a></li>
+                        <li><a href="https://sakurabeauty.vn/thong-cao-bao-chi">Tin tức thị trường</a></li>
+                        <li><a href="https://sakurabeauty.vn/khuyen-mai">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+                <div class="sub menu">
+                    <div class="icon"><a class="titlea" href="#"> Hệ thống phân phối </a></div>
+                    <ul class="sub_hi sub_Content">
+                        <li><a href="https://sakurabeauty.vn/showroom-sakura"> Showroom  </a></li>
+                        <li><a href="https://sakurabeauty.vn/store"> Dug Store  </a></li>
+                        <li><a href="https://sakurabeauty.vn/clinic-spa-sakura"> Clinic &amp; Spa  </a></li>
+                        <li><a href="https://sakurabeauty.vn/nha-thuoc-sakura"> Nhà thuốc  </a></li>
+                        <li><a href="https://sakurabeauty.vn/nha-phan-phoi-sakura"> Grocery Store  </a></li>
+                        <li><a href="https://sakurabeauty.vn/dai-ly-sakura"> Đại lý ủy quyền  </a></li>
+                    </ul>
+                </div>
+                <div class="hintro">
+                    <div class="hi">
+                        <div class="hi_intro">
+                            Chào buổi chiều        
+                        </div>
+                        <div class="hi_user"> <a href="https://sakurabeauty.vn/dang-nhap.html">Đăng nhập</a> - <a href="https://sakurabeauty.vn/dang-ky.html">Đăng ký</a> </div>
+                    </div>
+                    <div class="cart_love"> <a href="https://sakurabeauty.vn/yeu-thich.html" class="love"></a> <a href="https://sakurabeauty.vn/gio-hang.html" class="cart"></a> </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header desktop -->
+        <header class="desktop">
             <div class="top">
                 <div class="container">
                     <a href="tel:19007218" class="icon icon_phone">Hotline: <span >1900 7218</span></a>
